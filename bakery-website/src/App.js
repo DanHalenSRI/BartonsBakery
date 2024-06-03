@@ -25,7 +25,7 @@ const dinnerPlatesItems = [
 
 const pizzaDescription = "Ever see a square slice of pizza before?  You have now.  We also have 1/2 sheet rectangluar pizzas made to order.  Perfect for parties or just one really hungry person.";
 const quickBitesDescription = "Headin' to work and runnin' late?  We got y'all covered.  Check out our selection of quick bites.";
-const dinnerPlatesDescription = "Headin' home for dinner?  We got y'all covered.  Check out our selection of dinner plates.  Dinner plates come with two sides and a soft roll";
+const dinnerPlatesDescription = "Headin' home for dinner?  We got y'all covered.  Check out our selection of dinner plates.  Dinner plates come with two sides and a soft roll.";
 
 function App() {
     return (
