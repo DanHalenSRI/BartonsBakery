@@ -20,7 +20,7 @@ const quickBitesItems = [
 
 const dinnerPlatesItems = [
     { name: 'BBQ Sammy', description: `Pulled pork BBQ Sammy, two sides, and a soft roll.`, price: '$9.99' },
-    { name: 'Double Dog Dare', description: `When has one Hot Dog ever been enough?  Double it up with two sides and a soft roll.  Your choice of Hot Dog toppings.`, price: '$9.99' }
+    { name: 'Double Dog Dare', description: `When has one Hot Dog ever been enough?  Double it up and get two Hot Dogs, two sides, and a soft roll.  Your choice of Hot Dog toppings.`, price: '$9.99' }
 ];
 
 const pizzaDescription = "Ever see a square slice of pizza before?  You have now.  We also have 1/2 sheet rectangluar pizzas made to order.  Perfect for parties or just one really hungry person.";
