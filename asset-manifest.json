@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/BartonsBakery/static/js/main.f1ba68cd.js",
+    "main.js": "/BartonsBakery/static/js/main.fd55d12a.js",
     "index.html": "/BartonsBakery/index.html",
-    "main.f1ba68cd.js.map": "/BartonsBakery/static/js/main.f1ba68cd.js.map"
+    "main.fd55d12a.js.map": "/BartonsBakery/static/js/main.fd55d12a.js.map"
   },
   "entrypoints": [
-    "static/js/main.f1ba68cd.js"
+    "static/js/main.fd55d12a.js"
   ]
 }
