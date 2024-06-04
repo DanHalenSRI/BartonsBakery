@@ -2,7 +2,9 @@ import React from 'react';
 import { Box, Typography, List, ListItem } from '@mui/material';
 import ToppingsList from './ToppingsList';
 import pizzaItems from './pizzaItems';
+
 import photo2 from './Images/photo2.png';
+
 
 const pizzaDescription = "Ever see a square slice of pizza before? You have now. We also have 1/2 sheet rectangular pizzas made to order. Perfect for parties or just one really hungry person.";
 
@@ -29,10 +31,10 @@ const PizzaList = () => (
                     </ListItem>
                 ))}
             </List>
-            
             <Box sx={{ display: 'flex', justifyContent: 'center', gap: '5px', marginTop: '1px' }}>
                 <img src={photo2} alt="Photo 2" style={{ maxWidth: '20%', height: 'auto', borderRadius: '2px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }} />
             </Box>
+
         </Box>
         <ToppingsList />
     </Box>

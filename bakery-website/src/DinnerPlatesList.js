@@ -4,6 +4,7 @@ import dinnerPlatesItems from './dinnerPlatesItems';
 import DinnerSidesList from './DinnerSidesList';
 import dinnerSidesPhoto from './Images/DoubleDog.png';
 
+
 const dinnerPlatesDescription = "Headin' home for dinner? We got y'all covered. Check out our selection of dinner plates. Dinner plates come with two sides and a soft roll.";
 
 const DinnerPlatesList = () => (
