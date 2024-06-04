@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography, List, ListItem } from '@mui/material';
 import dinnerPlatesItems from './dinnerPlatesItems';
 import DinnerSidesList from './DinnerSidesList';
+import dinnerSidesPhoto from './Images/DoubleDog.png';
 
 const dinnerPlatesDescription = "Headin' home for dinner? We got y'all covered. Check out our selection of dinner plates. Dinner plates come with two sides and a soft roll.";
 
@@ -28,7 +29,14 @@ const DinnerPlatesList = () => (
                 ))}
             </List>
         </Box>
-        <DinnerSidesList />
+        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '20px' }}>
+            <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
+                <DinnerSidesList />
+            </Box>
+            <Box sx={{ flexShrink: 0, display: 'flex', justifyContent: 'right' }}>
+                <img src={dinnerSidesPhoto} alt="Dinner Sides Photo" style={{ maxWidth: '25%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }} />
+            </Box>
+        </Box>
     </Box>
 );
 
