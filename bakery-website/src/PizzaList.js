@@ -7,7 +7,7 @@ import photo2 from './Images/photo2.png';
 const pizzaDescription = "Ever see a square slice of pizza before? You have now. We also have 1/2 sheet rectangular pizzas made to order. Perfect for parties or just one really hungry person.";
 
 const PizzaList = () => (
-    <Box sx={{ backgroundColor: 'background.paper', padding: '2vh', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', border: '5px solid #C0392B', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+    <Box sx={{ backgroundColor: 'background.paper', padding: '2vh', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
         <Box>
             <Typography variant="h2" sx={{ marginBottom: '8px', fontWeight: 'bold', textDecoration: 'underline' }}>
                 Pizza

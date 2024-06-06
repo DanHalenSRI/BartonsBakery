@@ -1,19 +1,19 @@
 import React from 'react';
 import { Box, Typography, List, ListItem } from '@mui/material';
-import quickBitesItems from './quickBitesItems';
+import dessertItems from './DessertItems';
 
-const quickBitesDescription = "Headin' to work and runnin' late? We got y'all covered. Check out our selection of quick bites.";
+const dessertDescription = "Quick, order a dessert before the menu changes back!";
 
-const QuickBitesList = () => (
+const dessertList = () => (
     <Box sx={{ backgroundColor: 'background.paper', padding: '2vh', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', height: '100%' }}>
         <Typography variant="h2" sx={{ marginBottom: '8px', fontWeight: 'bold', textDecoration: 'underline' }}>
-            Quick Bites
+            Desserts!
         </Typography>
         <Typography variant="h5" sx={{ marginBottom: '20px' }}>
-            {quickBitesDescription}
+            {dessertDescription}
         </Typography>
         <List>
-            {quickBitesItems.map((item, index) => (
+            {dessertItems.map((item, index) => (
                 <ListItem key={index} sx={{ display: 'grid', gridTemplateColumns: '1fr auto', columnGap: '20px', paddingBottom: '1vh' }}>
                     <div>
                         <Typography variant="h5" sx={{ fontWeight: 'bold' }}>{item.name}</Typography>
@@ -28,4 +28,4 @@ const QuickBitesList = () => (
     </Box>
 );
 
-export default QuickBitesList;
+export default dessertList;

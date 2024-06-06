@@ -1,10 +1,13 @@
 import React from 'react';
-import { Box, AppBar, Toolbar, Typography, Grid, CssBaseline } from '@mui/material';
+import { Box, AppBar, Toolbar, Typography, Divider, CssBaseline } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Grid2 from '@mui/material/Unstable_Grid2'; // Ensure to use Grid2
 import PizzaList from './PizzaList';
 import QuickBitesList from './QuickBitesList';
 import DinnerPlatesList from './DinnerPlatesList';
 import LocalPizzaIcon from '@mui/icons-material/LocalPizza';
+import DessertMenu from './DessertMenu';
+import { useState, useEffect } from 'react';
 
 // Create a dark theme
 const darkTheme = createTheme({
@@ -30,6 +33,17 @@ const darkTheme = createTheme({
 });
 
 function App() {
+
+    const [showDinnerMenu, setShowDinnerMenu] = useState(true);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setShowDinnerMenu((prevShowDinnerMenu) => !prevShowDinnerMenu);
+        }, 30000); // 30 seconds interval
+
+        return () => clearInterval(interval); // Cleanup interval on component unmount
+    }, []);
+
     return (
         <ThemeProvider theme={darkTheme}>
             <CssBaseline />
@@ -42,15 +56,19 @@ function App() {
                         </Typography>
                     </Toolbar>
                 </AppBar>
-                <Grid container spacing={2} sx={{ flex: '1', padding: '20px', backgroundColor: 'background.default' }}>
-                    <Grid item xs={12} md={6}>
+                <Grid2 container sx={{ flex: '1', padding: '20px', backgroundColor: 'background.default', alignItems: 'stretch'}}>
+                    <Grid2 xs={12} md={5.85}>
                         <PizzaList />
-                    </Grid>
-                    <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                    </Grid2>
+                    <Grid2 xs={0} md={.15} sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'center', alignItems: 'stretch' }}>
+                        <Divider orientation="vertical" variant='middle' flexItem sx={{ borderWidth: '3px', borderColor: 'darkred' }} />
+                    </Grid2>
+                    <Grid2 xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                         <QuickBitesList />
-                        <DinnerPlatesList />
-                    </Grid>
-                </Grid>
+                        <Divider variant='middle' sx={{ borderWidth: '3px', borderColor: 'darkred' }} />
+                        {showDinnerMenu ? <DinnerPlatesList /> : <DessertMenu />}
+                    </Grid2>
+                </Grid2>
             </Box>
         </ThemeProvider>
     );
