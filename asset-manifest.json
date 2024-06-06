@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.js": "/BartonsBakery/static/js/main.62300876.js",
+    "main.js": "/BartonsBakery/static/js/main.d437762f.js",
+    "static/media/Square Pizza.png": "/BartonsBakery/static/media/Square Pizza.cdbc3fd0d5039740663f.png",
+    "static/media/CuteDesserts.png": "/BartonsBakery/static/media/CuteDesserts.1842ce89e8fc3c28cf2d.png",
     "static/media/photo2.png": "/BartonsBakery/static/media/photo2.18e1ef70ecb3ff662d7b.png",
     "static/media/DoubleDog.png": "/BartonsBakery/static/media/DoubleDog.24c1c08bb5b34c531d33.png",
+    "static/media/ChocolateChipCookie.png": "/BartonsBakery/static/media/ChocolateChipCookie.4ec1569248f2254eacd1.png",
     "index.html": "/BartonsBakery/index.html",
-    "main.62300876.js.map": "/BartonsBakery/static/js/main.62300876.js.map"
+    "main.d437762f.js.map": "/BartonsBakery/static/js/main.d437762f.js.map"
   },
   "entrypoints": [
-    "static/js/main.62300876.js"
+    "static/js/main.d437762f.js"
   ]
 }
