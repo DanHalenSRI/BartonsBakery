@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/BartonsBakery/static/js/main.ba5b0d28.js",
+    "main.js": "/BartonsBakery/static/js/main.85c67b47.js",
     "static/media/photo2.png": "/BartonsBakery/static/media/photo2.18e1ef70ecb3ff662d7b.png",
     "static/media/DoubleDog.png": "/BartonsBakery/static/media/DoubleDog.24c1c08bb5b34c531d33.png",
     "index.html": "/BartonsBakery/index.html",
-    "main.ba5b0d28.js.map": "/BartonsBakery/static/js/main.ba5b0d28.js.map"
+    "main.85c67b47.js.map": "/BartonsBakery/static/js/main.85c67b47.js.map"
   },
   "entrypoints": [
-    "static/js/main.ba5b0d28.js"
+    "static/js/main.85c67b47.js"
   ]
 }
