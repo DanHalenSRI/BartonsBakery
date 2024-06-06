@@ -50,8 +50,8 @@ function App() {
             <Box sx={{ width: '100vw', height: '100vh', overflow: 'hidden', display: 'flex', flexDirection: 'column', backgroundColor: 'background.default' }}>
                 <AppBar position="static" color="primary" sx={{ padding: '10px' }}>
                     <Toolbar sx={{ minHeight: '80px' }}>
-                        <LocalPizzaIcon sx={{ marginRight: '10px', fontSize: '2.5rem' }} />
-                        <Typography variant="h3" sx={{ flexGrow: 1, textAlign: 'center', color: 'text.primary' }}>
+                        <LocalPizzaIcon sx={{ marginRight: '10px', fontSize: 'calc(1rem + 2.5vw)' }} />
+                        <Typography variant="h1" sx={{ flexGrow: 1, textAlign: 'center', color: 'text.primary', fontSize: 'calc(1rem + 2.5vw)' }}>
                             Welcome to Barton's Bakery! | Call to Order Ahead - 607-338-8635
                         </Typography>
                     </Toolbar>
