@@ -8,6 +8,8 @@ import DinnerPlatesList from './DinnerPlatesList';
 import LocalPizzaIcon from '@mui/icons-material/LocalPizza';
 import DessertMenu from './DessertMenu';
 import { useState, useEffect } from 'react';
+import SquarePizzaIcon from './Images/Square Pizza.png';
+import ChocolateChipCookie from './Images/ChocolateChipCookie.png';
 
 // Create a dark theme
 const darkTheme = createTheme({
@@ -50,10 +52,11 @@ function App() {
             <Box sx={{ width: '100vw', height: '100vh', overflow: 'hidden', display: 'flex', flexDirection: 'column', backgroundColor: 'background.default' }}>
                 <AppBar position="static" color="primary" sx={{ padding: '10px' }}>
                     <Toolbar sx={{ minHeight: '80px' }}>
-                        <LocalPizzaIcon sx={{ marginRight: '10px', fontSize: 'calc(1rem + 2.5vw)' }} />
+                        <img src={SquarePizzaIcon} alt="Pizza Icon" style={{ maxWidth: '5%', height: 'auto', borderRadius: '2px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }} />
                         <Typography variant="h1" sx={{ flexGrow: 1, textAlign: 'center', color: 'text.primary', fontSize: 'calc(1rem + 2.5vw)' }}>
                             Welcome to Barton's Bakery! | Call to Order Ahead - 607-338-8635
                         </Typography>
+                        <img src={ChocolateChipCookie} alt="Cookie Icon" style={{ maxWidth: '4%', height: 'auto', borderRadius: '2px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }} />
                     </Toolbar>
                 </AppBar>
                 <Grid2 container sx={{ flex: '1', padding: '20px', backgroundColor: 'background.default', alignItems: 'stretch'}}>

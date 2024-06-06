@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Typography, List, ListItem } from '@mui/material';
 import dessertItems from './DessertItems';
+import dessertPhoto from './Images/CuteDesserts.png'
 
 const dessertDescription = "Quick, order a dessert before the menu changes back!";
 
@@ -26,6 +27,9 @@ const dessertList = () => (
                 </ListItem>
             ))}
         </List>
+        <Box sx={{ display: 'flex', justifyContent: 'center', gap: '5px', marginTop: '1px' }}>
+            <img src={dessertPhoto} alt="Cute Desserts" style={{ maxWidth: '25%', height: 'auto', borderRadius: '2px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }} />
+        </Box> 
     </Box>
 );
 
